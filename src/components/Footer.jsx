@@ -1,8 +1,10 @@
+import { Container } from "react-bootstrap";
+
 function Footer() {
     return (
-        <footer>
+        <Container as="footer">
             <p>Footer !</p>
-        </footer>
+        </Container>
     )
 }
 
