@@ -1,7 +1,9 @@
 function Header() {
-    return <header>
-        <p>Header !</p>
-    </header>
+    return (
+        <header>
+            <p>Header !</p>
+        </header>
+    )
 }
 
 
