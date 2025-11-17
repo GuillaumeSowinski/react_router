@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from "react-router";
-import "../Styles/header.css"
+import "../assets/styles/header.css"
 
 function Header() {
     return (
