@@ -1,11 +1,10 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router";
-import "../Styles/header.css"
 
 function Header() {
     return (
         <header>
-            <Navbar className="headerStyle">
+            <Navbar bg="light">
                 <Container as="nav">
                     <Navbar.Toggle aria-controls="navbar" />
                     <Navbar.Collapse id="navbar">
