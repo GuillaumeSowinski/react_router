@@ -1,10 +1,17 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from "react-router";
 import "../assets/styles/header.css"
+import { useMatch } from 'react-router';
 
 function Header() {
+    const match = useMatch('/categorie/:name');
     return (
         <header>
+            {match ? (
+                <h2>Catégorie : {match.params.name}</h2>
+            ) : (
+                <h2>Bienvenue sur le site</h2>
+            )}
             <Navbar bg="light">
                 <Container as="nav">
                     <Navbar.Toggle aria-controls="navbar" />
