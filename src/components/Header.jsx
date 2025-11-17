@@ -7,13 +7,14 @@ function Header() {
     const match = useMatch('/categorie/:name');
     return (
         <header>
-            {match ? (
-                <h2>Catégorie : {match.params.name}</h2>
-            ) : (
-                <h2>Bienvenue sur le site</h2>
-            )}
+
             <Navbar bg="light">
                 <Container as="nav">
+                    {match ? (
+                        <h2>Catégorie : {match.params.name}</h2>
+                    ) : (
+                        <h2>Bienvenue sur le site</h2>
+                    )}
                     <Navbar.Toggle aria-controls="navbar" />
                     <Navbar.Collapse id="navbar">
                         <Nav className="ms-auto">
