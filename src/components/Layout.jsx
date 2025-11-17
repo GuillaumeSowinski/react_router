@@ -10,6 +10,6 @@ const Layout = () => {
             </main>
             <Footer />
         </>
-    );
+    )
 }
 export default Layout;
